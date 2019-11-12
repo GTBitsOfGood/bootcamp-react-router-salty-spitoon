@@ -20,3 +20,39 @@
 .App-link {
   color: #09d3ac;
 }
+
+ul,
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+a {
+  cursor: pointer;
+  width: 250px;
+  max-width: 100%;
+  border-radius: 5px;
+  display: block;
+  padding: 1rem;
+  background: #69e1ff;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+section.destination > img {
+  width: 100%;
+  height: auto;
+}
+
+img.mommas-boy {
+  width: 200px;
+  max-width: 100%;
+}
