@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SuperWeenie = () => (
   <section class="destination">
-    <h1>Welcome to SUPER weenie hut juniors</h1>
+    <Link to = "/">Welcome to SUPER weenie hut juniors</Link>
     <img src="/superweenie.png" alt="Weenie" />
   </section>
 )

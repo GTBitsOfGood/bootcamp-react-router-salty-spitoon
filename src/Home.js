@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Home = () => (
   <>
@@ -6,13 +7,13 @@ const Home = () => (
     <img class="mommas-boy" src="/how-tough.png" alt="Mommas boy" />
     <ul>
       <li>
-        <a>I AM a weenie :'(</a>
+        <Link to = "/weenie">I AM a weenie :'(</Link>
       </li>
       <li>
-        <a>I'm not a weenie!</a>
+        <Link to = "/superweenie">I'm not a weenie!</Link>
       </li>
       <li>
-        <a>💪 💪 💪</a>
+        <Link to = "/spitoon"> 💪 💪 💪</Link>
       </li>
     </ul>
   </>

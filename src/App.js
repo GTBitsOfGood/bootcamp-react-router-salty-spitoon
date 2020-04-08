@@ -5,6 +5,7 @@ import Spitoon from './Spitoon'
 import Weenie from './Weenie'
 import Superweenie from './Superweenie'
 import Home from './Home'
+import { BrowserRouter, Switch, Route } from  'react-router-dom'
 
 /**
  * WECLOME TO REACT ROUTER. HOW TOUGH ARE YA?
@@ -36,13 +37,23 @@ import Home from './Home'
 
 function App() {
   return (
-    <section>
-      <Home />
-      <Spitoon />
-      <Weenie />
-      <Superweenie />
-    </section>
-  )
+    <BrowserRouter>
+    <Switch>
+      <Route exact path ="/">
+        <Home/>
+      </Route>
+      <Route path = "/spitoon">
+        <Spitoon/>
+      </Route>
+      <Route path = "/weenie">
+        <Weenie/>
+      </Route>
+      <Route path = "/superweenie">
+        <Superweenie/>
+      </Route>
+    </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App
